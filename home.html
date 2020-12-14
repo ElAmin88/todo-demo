@@ -170,7 +170,49 @@ iframe {
     display: block;
   }
 }
+form {
+            background-color: #f6f5f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 50px;
+            height: 100%;
+            text-align: center;
+        }
+        input {
+            background-color: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+        .form-container {
+            position: inherit;
+            top: 0;
+            height: 100%;
+            transition: all 0.6s ease-in-out;
+        }
+button {
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
 
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
 .cell {
   display: table-cell;
 }
@@ -353,9 +395,23 @@ iframe {
 						
 
 					</div>
-			</div>
-		</div>
+      </div>
+      <div class="form-container">
+        <form action="#">
+          <br>
+          <br>
+          <h1>Add Item</h1>
+          <span>Type your To-Do Item</span>
+          <input type="Text" placeholder="Item Name" />
+          <button>Add</button>
+          <br>
+          <br>
+          <button>Logout</button>
+      </form>
+      </div>
+    </div>
+    
 	</div>
-
+  
 </body>
 </html>
