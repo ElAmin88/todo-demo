@@ -5,6 +5,8 @@ require_once "config.php";
 $new =0;
 if($status == 0){
     $new = 1;
+}elseif($status == 1){
+    $new = 2;
 }else{
     $new = 0;
 }
